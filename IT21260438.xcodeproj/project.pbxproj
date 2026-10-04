@@ -27,11 +27,34 @@
 		253F170D3068D41E0041DAF5 /* IT21260438.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IT21260438.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		253F171F3068D4200041DAF5 /* IT21260438Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IT21260438Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		253F17293068D4200041DAF5 /* IT21260438UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IT21260438UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B2C5E013068E0000041DAF5 /* IT21260438TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IT21260438TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7B2C5E033068E0000041DAF5 /* Exceptions for "IT21260438" folder in "IT21260438TV" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				IT21260438.xcdatamodeld,
+				Models/AppSettings.swift,
+				"Models/DrinkRecord+Helpers.swift",
+				Models/HydrationStats.swift,
+				Persistence.swift,
+				Views/History/HistoryCharts.swift,
+				Views/Home/MascotView.swift,
+				Views/Home/WaterGaugeView.swift,
+				Views/Shared/CupIcon.swift,
+				Views/Shared/Theme.swift,
+			);
+			target = 7B2C5E073068E0000041DAF5 /* IT21260438TV */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		253F170F3068D41E0041DAF5 /* IT21260438 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7B2C5E033068E0000041DAF5 /* Exceptions for "IT21260438" folder in "IT21260438TV" target */,
+			);
 			path = IT21260438;
 			sourceTree = "<group>";
 		};
@@ -43,6 +66,11 @@
 		253F172C3068D4200041DAF5 /* IT21260438UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = IT21260438UITests;
+			sourceTree = "<group>";
+		};
+		7B2C5E023068E0000041DAF5 /* IT21260438TV */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IT21260438TV;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B2C5E053068E0000041DAF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +113,7 @@
 				253F170F3068D41E0041DAF5 /* IT21260438 */,
 				253F17223068D4200041DAF5 /* IT21260438Tests */,
 				253F172C3068D4200041DAF5 /* IT21260438UITests */,
+				7B2C5E023068E0000041DAF5 /* IT21260438TV */,
 				253F170E3068D41E0041DAF5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +124,7 @@
 				253F170D3068D41E0041DAF5 /* IT21260438.app */,
 				253F171F3068D4200041DAF5 /* IT21260438Tests.xctest */,
 				253F17293068D4200041DAF5 /* IT21260438UITests.xctest */,
+				7B2C5E013068E0000041DAF5 /* IT21260438TV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +200,28 @@
 			productReference = 253F17293068D4200041DAF5 /* IT21260438UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7B2C5E073068E0000041DAF5 /* IT21260438TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B2C5E0A3068E0000041DAF5 /* Build configuration list for PBXNativeTarget "IT21260438TV" */;
+			buildPhases = (
+				7B2C5E043068E0000041DAF5 /* Sources */,
+				7B2C5E053068E0000041DAF5 /* Frameworks */,
+				7B2C5E063068E0000041DAF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7B2C5E023068E0000041DAF5 /* IT21260438TV */,
+			);
+			name = IT21260438TV;
+			packageProductDependencies = (
+			);
+			productName = IT21260438TV;
+			productReference = 7B2C5E013068E0000041DAF5 /* IT21260438TV.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +243,9 @@
 						CreatedOnToolsVersion = 26.6;
 						TestTargetID = 253F170C3068D41E0041DAF5;
 					};
+					7B2C5E073068E0000041DAF5 = {
+						CreatedOnToolsVersion = 26.6;
+					};
 				};
 			};
 			buildConfigurationList = 253F17083068D41E0041DAF5 /* Build configuration list for PBXProject "IT21260438" */;
@@ -203,6 +265,7 @@
 				253F170C3068D41E0041DAF5 /* IT21260438 */,
 				253F171E3068D4200041DAF5 /* IT21260438Tests */,
 				253F17283068D4200041DAF5 /* IT21260438UITests */,
+				7B2C5E073068E0000041DAF5 /* IT21260438TV */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +292,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B2C5E063068E0000041DAF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,6 +317,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		253F17253068D4200041DAF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B2C5E043068E0000041DAF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,6 +623,72 @@
 			};
 			name = Release;
 		};
+		7B2C5E083068E0000041DAF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2SGDST2MQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Water Reminder";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Janith-Kavinda.IT21260438TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		7B2C5E093068E0000041DAF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2SGDST2MQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Water Reminder";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Janith-Kavinda.IT21260438TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +724,15 @@
 			buildConfigurations = (
 				253F173A3068D4210041DAF5 /* Debug */,
 				253F173B3068D4210041DAF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B2C5E0A3068E0000041DAF5 /* Build configuration list for PBXNativeTarget "IT21260438TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B2C5E083068E0000041DAF5 /* Debug */,
+				7B2C5E093068E0000041DAF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

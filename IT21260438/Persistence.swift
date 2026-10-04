@@ -35,6 +35,12 @@ struct PersistenceController {
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
+        #if os(tvOS)
+        // tvOS apps have no persistent local storage; the caches directory is the only writable place for the store.
+        if !inMemory, let caches = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first {
+            container.persistentStoreDescriptions.first?.url = caches.appendingPathComponent("IT21260438.sqlite")
+        }
+        #endif
         container.loadPersistentStores { _, error in
             if let error {
                 print("Core Data failed to load the store: \(error)")
